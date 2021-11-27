@@ -21,8 +21,9 @@ object MyDownloadManager {
             DownloadManager.Request(Uri.parse(url))
                 .setTitle("DownloadManager Demo") // Title of the Download Notification
                 .setDescription("Downloading...") // Description of the Download Notification
-                .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE) // Download Notification visibility
+                .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED) // Download Notification visibility
                 .setDestinationUri(Uri.fromFile(file)) // Uri of the destination file
+                .setMimeType("application/pdf") // Allow open after download is completed
                 .setAllowedOverMetered(true) //  Allow download on Mobile network
                 .setAllowedOverRoaming(true) // Allow download on roaming network
         val dm = context.getSystemService(DOWNLOAD_SERVICE) as DownloadManager

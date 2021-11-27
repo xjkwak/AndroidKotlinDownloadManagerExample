@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.button.setOnClickListener {
-            MyDownloadManager.beginDownload(this, "https://github.com/xjkwak/curso-android-kotlin-2021/blob/main/Android2021Teknhe.pdf")
+            MyDownloadManager.beginDownload(this, "https://github.com/xjkwak/curso-android-kotlin-2021/raw/main/Android2021Teknhe.pdf")
         }
 
 
