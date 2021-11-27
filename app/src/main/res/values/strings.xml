@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Download Manager Example</string>
+    <string name="download_url">https://github.com/xjkwak/curso-android-kotlin-2021/blob/main/Android2021Teknhe.pdf</string>
+</resources>
